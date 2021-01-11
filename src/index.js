@@ -1,7 +1,14 @@
+import Color from "color";
+import interpolateRGB from ("interpolate-rgb");
+
+
 const GH_green_one = "#216e39";
 const GH_green_two = "#30a14e";
 const GH_green_three = "#9be9a8";
 const GH_OFF = "#ebedf0";
+
+
+const interpolator = interpolateRGB(Color(GH_OFF).color, Color(GH_green_two).color)
 
 const columns = Array.from(
   document.querySelectorAll(".js-calendar-graph > svg > g > g")
@@ -13,7 +20,7 @@ columns[50][2].style.fill = GH_green_one;
 
 columns.forEach((col) => {
   col.forEach((rect) => {
-    rect.style.fill = GH_green_one;
+    rect.style.fill = Color(interpolator(0.5)).hex();
   });
 });
 

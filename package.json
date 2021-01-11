@@ -1,0 +1,17 @@
+{
+  "name": "Custom_GitHub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Brunno-DaSilva/GH_COLORS.git",
+  "author": "Bruno DaSilva <hi.dasilvab@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@webpack-cli/init": "^1.1.1",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "color": "^3.1.3",
+    "interpolate-rgb": "^0.0.2"
+  }
+}
